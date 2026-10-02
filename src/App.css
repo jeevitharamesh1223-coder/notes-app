@@ -1,0 +1,275 @@
+/* =========================
+   Page
+========================= */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+
+/* =========================
+   Main App
+========================= */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Notes App Card
+========================= */
+
+.notes-app {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+h1 {
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+
+/* =========================
+   Input Section
+========================= */
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* =========================
+   Input
+========================= */
+
+input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+
+/* =========================
+   Common Button
+========================= */
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Add Button
+========================= */
+
+.add-button,
+.save-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.add-button:hover,
+.save-button:hover {
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.35);
+}
+
+
+/* =========================
+   Total Notes
+========================= */
+
+.total-notes {
+  margin-top: 18px;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Notes List
+========================= */
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* =========================
+   Note Card
+========================= */
+
+.note-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 16px;
+
+  background: #f8f9ff;
+
+  border: 1px solid #e4e6f2;
+  border-radius: 14px;
+
+  transition: 0.2s;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   Note Text
+========================= */
+
+.note-card span {
+  flex: 1;
+  color: #333;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+
+/* =========================
+   Note Buttons
+========================= */
+
+.note-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+/* =========================
+   Edit Button
+========================= */
+
+.edit-button {
+  background: #e9e7ff;
+  color: #5b4bc4;
+}
+
+.edit-button:hover {
+  background: #dcd8ff;
+}
+
+
+/* =========================
+   Delete Button
+========================= */
+
+.delete-button {
+  background: #ffe7e7;
+  color: #d64545;
+}
+
+.delete-button:hover {
+  background: #ffd4d4;
+}
+
+
+/* =========================
+   No Notes Message
+========================= */
+
+.no-notes {
+  text-align: center;
+  color: #888;
+
+  background: #f8f9ff;
+
+  padding: 25px;
+
+  border-radius: 14px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  #root {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .notes-app {
+    margin-top: 20px;
+    padding: 25px 20px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+
+  .note-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .note-buttons {
+    justify-content: flex-end;
+  }
+}
