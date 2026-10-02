@@ -1,16 +1,38 @@
-# React + Vite
+# 📝 Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Notes App built using React and Vite.
 
-Currently, two official plugins are available:
+This project allows users to add, edit, and delete notes. Notes are stored in the browser using Local Storage, so they remain available even after refreshing the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- ➕ Add new notes
+- ✏️ Edit existing notes
+- 🗑️ Delete notes
+- 💾 Save notes using Local Storage
+- 🔢 Display total number of notes
+- 🎯 Automatically focus the input field
+- 📱 Responsive design
+- 🎨 Clean and simple user interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- Local Storage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚛️ React Concepts Used
+
+- `useState`
+- `useRef`
+- `useEffect`
+
+## ▶️ How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jeevitharamesh1223-coder/notes-app.git
