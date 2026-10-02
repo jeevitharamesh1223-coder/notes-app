@@ -1,4 +1,4 @@
-# 📝 Notes App
+# 📝 Syntecxhub_Notes App
 
 A simple and clean Notes App built using React and Vite.
 
